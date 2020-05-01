@@ -254,7 +254,9 @@
     /* About Section
     -------------------------------------------------------------------- */
     #about .profile-pic {
-        display: none;
+        display: block;
+        margin: 5px;
+
     }
 
     #about .download .button {
