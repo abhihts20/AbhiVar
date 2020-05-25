@@ -473,7 +473,8 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-    background: darkseagreen;
+    /*background: darkseagreen;*/
+    background: #80CBC4;
     padding-top: 90px;
     padding-bottom: 72px;
     overflow: auto;
@@ -498,7 +499,8 @@ ul#nav li.current a {
 
 /*====================================skills=====================*/
 #skills {
-    background: pink;
+    /*background: pink;*/
+   background: #E1BEE7;
     padding-top: 90px;
     padding-bottom: 72px;
     overflow: auto;
@@ -550,7 +552,10 @@ ul#nav li.current a {
     padding-top: 90px;
     padding-bottom: 72px;
     overflow: auto;
-    height: 100vh;
+    height: 100%;
+    /*background: #BBDEFB;*/
+    /*background: #E3F2FD;*/
+    background:#B2EBF2;
 }
 @media(max-width: 670px) {
     #internship {
