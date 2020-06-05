@@ -144,8 +144,15 @@
     box-sizing: border-box;
     border: 2px solid #16A085;
     border-radius: 10px;
+    transition: transform .2s;
     height: 400px;
     box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 678px) {
+    .projectbox:hover{
+        transform: scale(1.1);
+    }
 }
 
 .educationbox{
