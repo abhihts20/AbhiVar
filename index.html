@@ -665,7 +665,7 @@
         <div class="twelve columns">
 
             <ul class="copyright">
-                <li>&copy; Copyright 2020 Abhinav Varshney</li>
+                <li>&copy; Copyright <span class="year"></span> Abhinav Varshney</li>
                 <li>Design by <a href="#" title="Styleshout">Abhinav Varshney</a></li>
             </ul>
 
@@ -676,7 +676,12 @@
     </div>
 
 </footer> <!-- Footer End-->
-
+<script>
+    const yearEl=document.querySelector('.year');
+    const date=new Date();
+    const year=date.getFullYear();
+    yearEl.innerHTML=year;
+</script>
 <!-- Java Script
 ================================================== -->
 
