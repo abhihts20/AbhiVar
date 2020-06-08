@@ -539,6 +539,22 @@
                     </div>
                 </div>
             </div>
+            <div class="row" style="margin-top: 10px;">
+                <div class="twelve columns" style="text-align: center;">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <div class="centerform hideform">
+                        <button id="close" style="float: right;">X</button>
+                        <form action="/action_page.php">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="number" name="phone" placeholder="Phone" style="float: left;">
+                            <input type="text" name="message" placeholder="Message" style="height: 100px;">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <button id="show">Contact form</button>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -681,6 +697,17 @@
     const date=new Date();
     const year=date.getFullYear();
     yearEl.innerHTML=year;
+</script>
+<script>
+    $('#show').on('click', function () {
+        $('.centerform').show();
+        $(this).hide();
+    })
+
+    $('#close').on('click', function () {
+        $('.centerform').hide();
+        $('#show').show();
+    })
 </script>
 <!-- Java Script
 ================================================== -->
