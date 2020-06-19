@@ -16,6 +16,7 @@
     <script src="js/magnific-popup.js"></script>
     <script src="js/init.js"></script>
     <script src="js/progressBar.js"></script>
+    <!-- <script src="js/aos.js"></script> -->
     <!--- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
@@ -27,6 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
     <!-- Mobile Specific Metas
     ================================================== -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
@@ -37,6 +39,8 @@
     <link href="css/layout.css" rel="stylesheet">
     <link href="css/media-queries.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link href="css/aos.scss" rel="stylesheet"> -->
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
 
     <!-- Compiled and minified JavaScript -->
@@ -50,8 +54,12 @@
     <!-- Favicons
      ================================================== -->
     <link href="images/abhinav.png" rel="shortcut icon">
+    <script src="https://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
+   
 </head>
 <body>
+
+   
 <!-- Header
 ================================================== -->
 <header id="home">
@@ -71,7 +79,11 @@
     </nav> <!-- end #nav-wrap -->
     <div class="row banner">
         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Abhinav Varshney.<br><br><br>
+            <h1 class="responsive-headline" data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            data-aos-mirror="true">I'm Abhinav Varshney.<br><br><br>
                 <br><br><br><br><br>
                 Software Engineer</h1>
 
@@ -100,7 +112,10 @@
 ================================================== -->
 <section id="about">
     <h2 class="heading" style="text-align: center;font-size: 4.5rem;margin-bottom: 80px;">About</h2>
-    <div class="row">
+    <div class="row" data-aos="fade-up"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true">
         <div class="three columns">
             <img style="width: 200px;height: 200px" alt="" class="profile-pic" src="images/abhinavprof.png"/>
         </div>
@@ -108,13 +123,13 @@
         <div class="nine columns main-col">
 
             <div class="card aboutbox">
-                <h2>Freelancer 🙇💻|Android Developer 👨‍💻</h2>
+                <h2 >Freelancer 🙇💻|Android Developer 👨‍💻</h2>
 
                 <p>Native place Aligarh. Currently staying in Hathras<br>
 
                     Determined,motivated,enthusiastic personality with sound knowledge of various computer science
                     technologies.<br>
-                    Working as a Technical Trainee at Gemini Solution Private Limited.
+                    Working as a Technical Trainee at Gemini Solutions Private Limited.
                 <blockquote><q><b>The difference between a successful person and others is not lack of strength not
                     a lack of knowledge but rather a lack of will.</b></q></blockquote>
                 </p>
@@ -136,7 +151,10 @@
 
 
     </div> <!-- End Education -->
-    <div class="row">
+    <div class="row" data-aos="zoom-in-right"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true">
         <div class="four columns">
             <div class="educationbox">
                 <div class="center">
@@ -205,32 +223,54 @@
         style="text-align: center;font-size: 4.5rem;margin-bottom: 80px;font-weight: bold;color: black;">Skills</h2>
     <div class="row skills">
         <div class="twelve columns">
-            <div class="skillbar clearfix" data-percent="75%">
+            <div class="skillbar clearfix" data-percent="75%" data-aos="fade-right"   data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            data-aos-mirror="true">
                 <div class="skillbar-title" style="background: #d35400;"><span>C</span></div>
                 <div class="skillbar-bar" style="background: #e67e22;"></div>
                 <div class="skill-bar-percent">75%</div>
             </div>
-            <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar clearfix " data-percent="80%"
+            data-aos="fade-left"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true">
                 <div class="skillbar-title" style="background: #2980b9;"><span>Core Java</span></div>
                 <div class="skillbar-bar" style="background: #3498db;"></div>
                 <div class="skill-bar-percent">80%</div>
             </div>
-            <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar clearfix " data-percent="50%"
+            data-aos="fade-right"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true">
                 <div class="skillbar-title" style="background: #2c3e50;"><span>Android</span></div>
                 <div class="skillbar-bar" style="background: #2c3e50;"></div>
                 <div class="skill-bar-percent">50%</div>
             </div>
-            <div class="skillbar clearfix" data-percent="50%">
+            <div class="skillbar clearfix" data-percent="50%"
+            data-aos="fade-left"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true">
                 <div class="skillbar-title" style="background: #46465e;"><span>Python</span></div>
                 <div class="skillbar-bar" style="background: #5a68a5;"></div>
                 <div class="skill-bar-percent">50%</div>
             </div>
-            <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar clearfix " data-percent="60%"data-aos="fade-right"  data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            data-aos-mirror="true">
                 <div class="skillbar-title" style="background: #333333;"><span>DBMS</span></div>
                 <div class="skillbar-bar" style="background: #525252;"></div>
                 <div class="skill-bar-percent">60%</div>
             </div>
-            <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar clearfix " data-percent="70%"
+            data-aos="fade-left"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true">
                 <div class="skillbar-title" style="background: #27ae60;"><span>SQL</span></div>
                 <div class="skillbar-bar" style="background: #2ecc71;"></div>
                 <div class="skill-bar-percent">70%</div>
@@ -245,14 +285,20 @@
         Internships</h2>
     <div class="row item">
         <div class="three columns">
-            <img style="width: 200px;height: 200px;margin: 3% 3% 3% 0" alt="" class="profile-pic"
+            <img data-aos="zoom-in"  data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            data-aos-mirror="true" style="width: 200px;height: 200px;margin: 3% 3% 3% 0" alt="" class="profile-pic"
                  src="images/circle-cropped.png"/>
         </div>
-        <div class="nine columns">
+        <div class="nine columns" data-aos="fade-up"  data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="false"
+        data-aos-mirror="true">
 
             <div class="card raisedboxintern" style="margin: 3% 3% 3% 0;">
                 <div class="card-content">
-                    <h3>Gemini Solution Private Limited</h3>
+                    <h3>Gemini Solutions Private Limited</h3>
                     <p class="info" style="color: black;font-weight: bold">Ground and 4th Floor, Plot Number 404 – 405, Udyog Vihar Phase 3,
                         Gurgaon, Haryana 122016<span>&bull;</span> <em class="date">June
                             2020</em></p>
@@ -273,14 +319,20 @@
     </div>
     <div class="row item">
         <div class="three columns">
-            <img style="width: 200px;height: 200px;margin: 3% 3% 3% 0" alt="" class="profile-pic"
+            <img data-aos="zoom-in"  data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            data-aos-mirror="true" style="width: 200px;height: 200px;margin: 3% 3% 3% 0" alt="" class="profile-pic"
                  src="images/appsqudzlogo.png"/>
         </div>
-        <div class="nine columns">
+        <div class="nine columns" data-aos="fade-up"  data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="false"
+        data-aos-mirror="true">
 
             <div class="card raisedboxintern" style="margin: 3% 3% 3% 0;">
                 <div class="card-content">
-                    <h3>Appsquadz Technologies Private Limited</h3>
+                    <h3 >Appsquadz Technologies Private Limited</h3>
                     <p class="info" style="color: black;font-weight: bold">H35,Ist Floor,Sector
                         63,Noida<span>&bull;</span> <em class="date">May
                             2019</em></p>
@@ -310,7 +362,10 @@
 <section id="portfolio">
     <h2 class="heading"
         style="text-align: center;font-size: 4.5rem;margin-bottom: 80px;color: white;font-weight: bold;">Projects</h2>
-    <div class="row">
+    <div class="row"data-aos="fade-right"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true">
         <div class="four columns ">
             <div class="card projectbox">
                 <h3 class="proh">Social Data Analytics</h3>
@@ -341,7 +396,10 @@
 
     </div>
     <br>
-    <div class="row">
+    <div class="row"data-aos="fade-left"  data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-once="false"
+    data-aos-mirror="true" >
         <div class="four columns">
             <div class="card projectbox ">
                 <h3 class="proh">Om Sai Building Materials</h3>
@@ -380,14 +438,21 @@
     ----------------------------------------------- -->
     <div class="row education">
 
-        <div class="three columns header-col">
-            <h1><p>Certificates & <span> Achievemnts</span></p></h1>
+        <div class="three columns header-col"
+        >
+            <h1 data-aos="fade-right"  data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            data-aos-mirror="true"><p>Certificates & <span> Achievemnts</span></p></h1>
         </div>
 
         <div class="nine columns main-col">
 
             <div class="row item">
-                <div class="twelve columns box-acheive">
+                <div data-aos="fade-left"  data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-once="false"
+                data-aos-mirror="true"class="twelve columns box-acheive">
                     <p style="color: #000000;font-weight: bolder;">
                         1. Awarded with Letter of Appreciation by Dean Academic Affairs,GLA University, Mathura for
                         developing Abacus Society
@@ -410,14 +475,20 @@
     <div class="row work">
 
         <div class="three columns header-col">
-            <h1><p>Extra Co-Curricular & Curricular <span>Activities</span></p></h1>
+            <h1 data-aos="fade-right"  data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            data-aos-mirror="true"><p>Extra Co-Curricular & Curricular <span>Activities</span></p></h1>
         </div>
 
         <div class="nine columns main-col">
 
             <div class="row item">
 
-                <div class="twelve columns box-acheive">
+                <div data-aos="fade-left"  data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-once="false"
+                data-aos-mirror="true" class="twelve columns box-acheive">
                     <p style="color: #000000;font-weight: bolder;">
                         1. President of Javapie Club.<br>
                         2. Delivered workshop on Android and C conducted by Javapie Club(A technical club under Computer
@@ -504,7 +575,10 @@
 
 
     <div class="row">
-        <div class="cloumns contactbox">
+        <div class="cloumns contactbox"data-aos="fade-up"  data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-once="false"
+        data-aos-mirror="true">
             <div class="row">
                 <div class="twelve columns">
                     <h2 style="text-align: center;color: white">1/235 Avas Vikas Colony,Agra Road Hathras-204101</h2>
@@ -544,7 +618,7 @@
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                     <div class="centerform hideform">
                         <button id="close" style="float: right;">X</button>
-                        <form action="/action_page.php">
+                        <form action="/action_page.php" method="post">
                             <input type="text" name="name" placeholder="Name">
                             <input type="email" name="email" placeholder="Email">
                             <input type="number" name="phone" placeholder="Phone" style="float: left;">
@@ -552,7 +626,7 @@
                             <input type="submit" value="Submit">
                         </form>
                     </div>
-                    <button id="show">Contact form</button>
+                    <button id="show" style="display: none;"></button>
                 </div>
             </div>
         </div>
@@ -709,6 +783,11 @@
         $('#show').show();
     })
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 <!-- Java Script
 ================================================== -->
 
